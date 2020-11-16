@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>Tambah Data</h2>
+<form method="POST">
+    <table width="400">
+        <tbody>
+            <tr>
+                <td><label>No. Induk</label></td>
+                <td><input type="text" name="no_induk"/><br/></td>
+            </tr>
+            <tr>
+                <td><label>Nama</label></td>
+                <td><input type="text" name="nama"/><br/></td>
+            </tr>
+            <tr>
+                <td><label>Alamat</label></td>
+                <td><textarea name="alamat"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Simpan"/></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+<br/>
+<br/>
+<a href="/">Ke halaman awal</a>
+{% endblock %}
